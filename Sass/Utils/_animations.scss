@@ -1,0 +1,98 @@
+/*Animation du défilement du menu*/
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.anim {
+  &-1{
+    animation-delay: 0.1s;
+  }
+  &-2{
+    animation-delay: 0.2s;
+  }
+  &-3{
+    animation-delay: 0.3s;
+  }
+  &-4{
+    animation-delay: 0.4s;
+  }
+  &-5{
+    animation-delay: 0.5s;
+  }
+  &-6{
+    animation-delay: 0.6s;
+  }
+  &-7{
+    animation-delay: 0.7s;
+  }
+  &-8{
+    animation-delay: 0.8s;
+  }
+  &-9{
+    animation-delay: 0.9s;
+  }
+  &-10{
+    animation-delay: 1s;
+  }
+}
+
+/* Animation du coeur*/
+.fa-heart-animated {
+  position: absolute;
+  left: 50%;
+  font-size: 0px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  bottom: 0;
+  background-image: linear-gradient(135deg, #FF79DA, #9356DC);
+  font-weight: bold;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Animation du loader */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation du bloc */
+
+@keyframes off{
+  from {
+  
+    opacity: 90%;
+}
+to {
+  display: none;
+  opacity: 0%;
+  z-index: -1;
+  
+}
+}
+
+/* Animation du bouton */
+
+@keyframes flash {
+  0% {
+      opacity: 0.2;
+  }
+  100% {
+      opacity: 1;
+  }
+}
